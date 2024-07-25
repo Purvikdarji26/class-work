@@ -55,3 +55,211 @@ meta: Used to provide metadata about a document, such as the character encoding 
 <meta charset="UTF-8" />
 Void elements are typically written with a single tag, followed by a forward slash (/) at the end, known as a self-closing tag. This indicates that the element is a void element and does not require a separate closing tag.
 It's worth noting that while void elements do not have a closing tag, they can still have attributes, which provide additional information about the element.
+Q.4) What are void elements in HTML? 
+Ans.Void Elements in HTML:
+In HTML, a void element (also known as a self-closing element or empty element) is an element that does not have a closing tag. Void elements are used to represent a single entity or concept, and they do not contain any content or child elements.
+Here are the key characteristics of void elements:
+No closing tag: Void elements do not have a separate closing tag.
+No content: Void elements do not contain any content or child elements.
+Self-closing: Void elements are typically written with a single tag, followed by a forward slash (/) at the end, known as a self-closing tag.
+Here are some examples of void elements in HTML:
+img: Used to add an image to a document.
+<img src="image.jpg" alt="Image description" />
+br: Used to create a line break in a document.
+<br />
+hr: Used to create a horizontal rule (a horizontal line) in a document.
+<hr />
+input: Used to create a form input field.
+<input type="text" name="username" />
+link: Used to link to an external stylesheet or script.
+<link rel="stylesheet" type="text/css" href="styles.css" />
+meta: Used to provide metadata about a document, such as the character encoding or author information.
+<meta charset="UTF-8" />
+Void elements are used to add functionality or information to a document without requiring a separate closing tag. They are often used for elements that do not have any content, such as images, links, or input fields.
+Remember, void elements are not the same as elements that can be empty, such as a p element with no content. Void elements are specifically defined in the HTML specification as not requiring a closing tag.
+Q.5) What are HTML Entities? 
+Ans.HTML Entities:
+In HTML, an entity is a special character or symbol that is represented using a specific code or sequence of characters. Entities are used to represent characters that are not easily typed on a keyboard or that have special meanings in HTML.
+HTML entities are typically represented using an ampersand (&) followed by a code or abbreviation, and then a semicolon (;). This format is known as an entity reference.
+Here are some common examples of HTML entities:
+&: Represents the ampersand (&) character itself.
+&amp;
+<: Represents the less-than (<) character.
+&lt;
+>: Represents the greater-than (>) character.
+&gt;
+": Represents the double quote (") character.
+&quot;
+': Represents the single quote (') character.
+&apos;
+ : Represents a non-breaking space (a space that won't be broken by a line wrap).
+&nbsp;
+©: Represents the copyright symbol (©).
+&copy;
+®: Represents the registered trademark symbol (®).
+&reg;
+™: Represents the trademark symbol (™).
+&trade;
+HTML entities are used for several reasons:
+Character representation: Entities allow you to represent characters that are not easily typed on a keyboard or that have special meanings in HTML.
+Avoiding conflicts: Entities help avoid conflicts between HTML code and special characters, such as the less-than (<) and greater-than (>) characters, which have special meanings in HTML.
+Improving readability: Entities can make your HTML code more readable by replacing complex or hard-to-type characters with easy-to-read codes.
+There are many more HTML entities available, and you can find a comprehensive list in the HTML specification or online resources.
+Q.6) What are different types of lists in HTML? 
+Ans. Types of Lists in HTML:
+In HTML, there are three main types of lists: Ordered Lists, Unordered Lists, and Definition Lists. Each type of list is used to present a collection of items in a specific way.
+1. Ordered Lists (OL)
+An ordered list is a list of items that are numbered in a specific order. Ordered lists are used when the order of the items is important.
+Example:
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+Output:
+Item 1
+Item 2
+Item 3
+2. Unordered Lists (UL)
+An unordered list is a list of items that are not numbered and are presented in a bulleted format. Unordered lists are used when the order of the items is not important.
+Example:
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+Output:
+• Item 1 
+• Item 2 
+• Item 3
+3. Definition Lists (DL)
+A definition list is a list of terms and their corresponding definitions. Definition lists are used to present a list of terms with their explanations.
+Example:
+<dl>
+  <dt>Term 1</dt>
+  <dd>Definition of Term 1</dd>
+  <dt>Term 2</dt>
+  <dd>Definition of Term 2</dd>
+  <dt>Term 3</dt>
+  <dd>Definition of Term 3</dd>
+</dl>
+Output:
+Term 1 Definition of Term 1
+Term 2 Definition of Term 2
+Term 3 Definition of Term 3
+In addition to these three main types of lists, HTML also provides some attributes and styles to customize the appearance of lists, such as:
+type attribute: Specifies the type of bullet or numbering system to use.
+start attribute: Specifies the starting number for an ordered list.
+reversed attribute: Reverses the order of an ordered list.
+list-style property: Specifies the style of the bullet or numbering system using CSS.
+These attributes and styles can be used to create more customized and visually appealing lists in HTML.
+Q.7) What is the ‘class’ attribute in HTML?
+Ans. The class Attribute in HTML:
+In HTML, the class attribute is a global attribute that allows you to assign one or more classes to an HTML element. A class is a way to identify an element as belonging to a particular group or category, and it is used to apply styles, behaviors, or other effects to the element using CSS.
+Syntax:
+[element class="class-name"]
+Example:
+<p class="highlight">This paragraph will be highlighted.</p>
+In this example, the p element is assigned a class named "highlight". You can then use CSS to target elements with this class and apply styles to them:
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+Multiple Classes:
+You can assign multiple classes to an element by separating them with spaces:
+<p class="highlight important">This paragraph will be highlighted and marked as important.</p>
+Uses of the class Attribute:
+Styling: The class attribute is commonly used to apply CSS styles to elements.
+JavaScript: Classes can be used to select elements in JavaScript, making it easier to manipulate them dynamically.
+Accessibility: Classes can be used to provide additional information about an element's purpose or role, improving accessibility for screen readers and other assistive technologies.
+Semantic Meaning: Classes can be used to add semantic meaning to an element, making it easier for search engines and other machines to understand the structure and content of a webpage.
+Best Practices:
+Use meaningful and descriptive class names that indicate the purpose or role of the element.
+Avoid using IDs and classes interchangeably; IDs should be used for unique elements, while classes can be used for multiple elements.
+Keep class names concise and consistent throughout your codebase.
+By using the class attribute effectively, you can write more efficient, flexible, and maintainable HTML and CSS code.
+Q.8) What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements? 
+Ans. The Difference between id and class Attributes:
+In HTML, both id and class attributes are used to identify and target elements, but they serve different purposes and have distinct characteristics.
+id Attribute:
+Unique Identifier: The id attribute assigns a unique identifier to an element, which must be unique within the entire HTML document.
+Single Element: An id can only be applied to a single element within a document.
+JavaScript and CSS: id is often used in JavaScript to select and manipulate a specific element, and in CSS to apply styles to a single element.
+Semantic Meaning: id can provide semantic meaning to an element, indicating its purpose or role in the document.
+Example:
+<div id="header">Header Content</div>
+class Attribute:
+Grouping Elements: The class attribute assigns a class name to an element, which can be shared by multiple elements within a document.
+Multiple Elements: A class can be applied to multiple elements within a document.
+JavaScript and CSS: class is often used in JavaScript to select and manipulate a group of elements, and in CSS to apply styles to multiple elements.
+Styling and Behavior: class is commonly used to apply styles, behaviors, or other effects to a group of elements.
+Example:
+<p class="highlight">This paragraph will be highlighted.</p>
+<p class="highlight">This paragraph will also be highlighted.</p>
+Key Differences:
+Uniqueness: id must be unique, while class can be shared by multiple elements.
+Scope: id is typically used for a single element, while class is used for a group of elements.
+Purpose: id provides semantic meaning and is often used for JavaScript and CSS selection, while class is primarily used for styling and behavior.
+When to use id:
+When you need to target a single, unique element.
+When you need to provide semantic meaning to an element.
+When to use class:
+When you need to target multiple elements with the same styles or behavior.
+When you need to group elements together for styling or JavaScript manipulation.
+By understanding the differences between id and class attributes, you can write more efficient, flexible, and maintainable HTML and CSS code.
+Q.9) What are the various formatting tags in HTML?
+Ans. HTML Formatting Tags:
+HTML provides a range of formatting tags to control the appearance and layout of text on a web page. Here are some of the most commonly used formatting tags:
+Physical Formatting Tags:
+These tags were introduced in HTML 3.2 and are still supported in HTML5, but they are not as commonly used as they were in the past.
+<b>: Bold text
+<b>This text will be bold</b>
+<i>: Italic text
+<i>This text will be italic</i>
+<u>: Underlined text
+<u>This text will be underlined</u>
+<s>: Strikethrough text
+<s>This text will be struck through</s>
+<strike>: Strikethrough text (deprecated in HTML5)
+<strike>This text will be struck through</strike>
+<tt>: Teletype text (monospace font)
+<tt>This text will be in a monospace font</tt>
+<big>: Big text
+<big>This text will be bigger</big>
+<small>: Small text
+<small>This text will be smaller</small>
+<font>: Font (deprecated in HTML5)
+<font size="4" color="red">This text will be in a specific font</font>
+Logical Formatting Tags:
+These tags were introduced in HTML 4.0 and are still widely used today.
+<em>: Emphasized text (italic)
+<em>This text will be emphasized</em>
+<strong>: Strongly emphasized text (bold)
+<strong>This text will be strongly emphasized</strong>
+<code>: Code text (monospace font)
+<code>This text will be in a monospace font</code>
+<samp>: Sample output text (monospace font)
+<samp>This text will be in a monospace font</samp>
+<kbd>: Keyboard input text (monospace font)
+<kbd>This text will be in a monospace font</kbd>
+<var>: Variable text (italic)
+<var>This text will be a variable</var>
+<cite>: Citation text (italic)
+<cite>This text will be a citation</cite>
+<abbr>: Abbreviation text (dotted underline)
+<abbr title="HyperText Markup Language">HTML</abbr>
+<dfn>: Definition text (italic)
+<dfn>This text will be a definition</dfn>
+Other Formatting Tags:
+<sub>: Subscript text
+H<sub>2</sub>O
+<sup>: Superscript text
+E=mc<sup>2</sup>
+<mark>: Marked text (highlighted)
+<mark>This text will be highlighted</mark>
+<ruby>: Ruby text (used for East Asian languages)
+<ruby>
+  <rb>kanji</rb>
+  <rt>reading</rt>
+</ruby>
+These are just some of the many formatting tags available in HTML. By using these tags, you can control the appearance and layout of text on your web page.
