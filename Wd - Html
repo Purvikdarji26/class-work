@@ -263,3 +263,83 @@ E=mc<sup>2</sup>
   <rt>reading</rt>
 </ruby>
 These are just some of the many formatting tags available in HTML. By using these tags, you can control the appearance and layout of text on your web page.
+Q.10) How is Cell Padding different from Cell Spacing?
+Ans. Cell padding and cell spacing are two related but distinct concepts in HTML table layout.
+Cell Padding: Cell padding refers to the space between the cell content and the cell border. It is the amount of space added between the cell's content and its border. When you set cell padding, you are adding space inside the cell, making the content appear farther away from the border.
+Cell Spacing: Cell spacing, on the other hand, refers to the space between adjacent table cells. It is the amount of space added between the borders of adjacent cells. When you set cell spacing, you are adding space between the cells, making the borders of adjacent cells appear farther apart.
+To illustrate the difference:
+Cell padding: Imagine a picture frame. The padding is the space between the picture (content) and the frame (border).
+Cell spacing: Imagine two picture frames side by side. The spacing is the space between the two frames (borders).
+In summary:
+Cell padding adds space inside the cell, between the content and the border.
+Cell spacing adds space between adjacent cells, between their borders.
+By adjusting cell padding and cell spacing, you can control the layout and appearance of your HTML tables.
+Q.11) How can we club two or more rows or columns into a single row or column in an HTML table? 
+Ans. To club two or more rows or columns into a single row or column in an HTML table, you can use the rowspan and colspan attributes.
+Rowspan: The rowspan attribute is used to merge two or more rows into a single row. It specifies the number of rows that a cell should span.
+Example:
+<table>
+  <tr>
+    <td rowspan="2">Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+  <tr>
+    <td>Cell 3</td>
+  </tr>
+</table>
+In this example, the first cell spans two rows.
+Colspan: The colspan attribute is used to merge two or more columns into a single column. It specifies the number of columns that a cell should span.
+Example:
+<table>
+  <tr>
+    <td colspan="2">Cell 1</td>
+    <td>Cell 3</td>
+  </tr>
+  <tr>
+    <td>Cell 4</td>
+    <td>Cell 5</td>
+    <td>Cell 6</td>
+  </tr>
+</table>
+In this example, the first cell spans two columns.
+Using both Rowspan and Colspan: You can also use both rowspan and colspan attributes together to create more complex table layouts.
+Example:
+<table>
+  <tr>
+    <td rowspan="2" colspan="2">Cell 1</td>
+    <td>Cell 3</td>
+  </tr>
+  <tr>
+    <td>Cell 4</td>
+  </tr>
+  <tr>
+    <td>Cell 5</td>
+    <td>Cell 6</td>
+    <td>Cell 7</td>
+  </tr>
+</table>
+In this example, the first cell spans two rows and two columns.
+By using rowspan and colspan attributes, you can create complex table layouts and club two or more rows or columns into a single row or column in an HTML table.
+Q.12) What is the difference between a block-level element and an inline element? 
+Ans.  In HTML, elements can be classified into two categories: block-level elements and inline elements. The main difference between them lies in how they are displayed and interact with other elements on a web page.
+Block-Level Elements: Block-level elements are those that occupy the full width of their parent container and start on a new line. They are typically used to define structural elements of a web page, such as paragraphs, headings, lists, and divisions.
+Characteristics of block-level elements:
+They occupy the full width of their parent container.
+They start on a new line.
+They can contain other block-level elements or inline elements.
+They can have margins, padding, and borders.
+Examples: h1, p, ul, ol, li, div, table, etc.
+Inline Elements: Inline elements are those that occupy only the space needed for their content and do not start on a new line. They are typically used to define inline content, such as text, images, or links.
+Characteristics of inline elements:
+They occupy only the space needed for their content.
+They do not start on a new line.
+They cannot contain block-level elements, but can contain other inline elements.
+They cannot have margins, padding, or borders (although CSS can be used to add these).
+Examples: a, span, img, input, label, strong, em, etc.
+Key differences:
+Block-level elements occupy the full width and start on a new line, while inline elements occupy only the space needed and do not start on a new line.
+Block-level elements can contain other block-level elements or inline elements, while inline elements can only contain other inline elements.
+Block-level elements can have margins, padding, and borders, while inline elements cannot (without CSS).
+Understanding the difference between block-level and inline elements is essential for creating well-structured and visually appealing web pages.
+Q.13) How to create a Hyperlink in HTML?
+Ans. 
