@@ -37,3 +37,21 @@ alt: provides alternative text for accessibility
 width: sets the image width
 height: sets the image height
 Remember to always use quotes around attribute values, unless the value is a boolean (true or false).
+Q.3) What are void elements in HTML?
+Ans.In HTML, a void element (also known as a self-closing element or empty element) is an element that does not have a closing tag. Void elements are used to represent a single entity or concept, and they do not contain any content or child elements.
+Void elements are typically used to add functionality or information to a document without requiring a separate closing tag. They are often used for elements that do not have any content, such as images, links, or input fields.
+Here are some examples of void elements in HTML:
+img: Used to add an image to a document.
+<img src="image.jpg" alt="Image description" />
+br: Used to create a line break in a document.
+<br />
+hr: Used to create a horizontal rule (a horizontal line) in a document.
+<hr />
+input: Used to create a form input field.
+<input type="text" name="username" />
+link: Used to link to an external stylesheet or script.
+<link rel="stylesheet" type="text/css" href="styles.css" />
+meta: Used to provide metadata about a document, such as the character encoding or author information.
+<meta charset="UTF-8" />
+Void elements are typically written with a single tag, followed by a forward slash (/) at the end, known as a self-closing tag. This indicates that the element is a void element and does not require a separate closing tag.
+It's worth noting that while void elements do not have a closing tag, they can still have attributes, which provide additional information about the element.
