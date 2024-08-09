@@ -370,3 +370,250 @@ If you want to link to a specific part of the same page, you can do so by using 
 <a href="#section">Go to section</a>
 This link will navigate to the element with the id "section" on the same page.
 These are the basics of creating hyperlinks in HTML. You can experiment with different attributes and uses to suit your needs.
+Q.14)What is the use of an iframe tag?
+Ans.The iframe tag is used to embed another HTML document within a web page. It allows you to display content from another website or URL within a frame on your own website. The iframe tag is commonly used for a variety of purposes, including:
+Embedding third-party content: Iframes are often used to embed content from third-party websites, such as YouTube videos, Google Maps, or social media feeds.
+Creating interactive content: Iframes can be used to create interactive content, such as quizzes, games, or surveys, that can be embedded within a web page.
+Displaying dynamic content: Iframes can be used to display dynamic content, such as live updates or real-time data, within a web page.
+Creating a widget: Iframes can be used to create a widget that can be embedded within a web page, allowing users to interact with the content within the iframe.
+Sandboxing content: Iframes can be used to sandbox content, isolating it from the rest of the web page and preventing it from interacting with other elements on the page.
+Creating a lightbox: Iframes can be used to create a lightbox effect, where a smaller window or frame is displayed over the top of the main content.
+Embedding a web page: Iframes can be used to embed a web page within another web page, allowing users to view the content of the embedded page without leaving the main page.
+Some common attributes used with the iframe tag include:
+src: specifies the URL of the content to be embedded
+width and height: specify the size of the iframe
+frameborder: specifies the border style of the iframe
+scrolling: specifies whether the iframe should have a scrollbar
+marginwidth and marginheight: specify the margin around the iframe content
+Here is an example of how to use the iframe tag:
+<iframe src="https://www.example.com" width="500" height="300" frameborder="0" scrolling="yes"></iframe>
+This code embeds the content of the URL https://www.example.com within an iframe that is 500 pixels wide and 300 pixels high, with no border and a scrollbar.
+Q.15)What is the use of a span tag? Explain with example?
+Ans. The span tag is an inline HTML element that is used to group elements for styling purposes or to apply attributes to a part of a text. It is a generic container element that does not have any inherent meaning, but can be used to apply styles, scripts, or other attributes to a specific part of the content.
+The span tag is often used to:
+Apply styles: To apply CSS styles to a specific part of the text, such as changing the color, font, or background.
+Add semantics: To add meaning to a part of the text, such as highlighting a keyword or a phrase.
+Create a hook: To create a hook for JavaScript or other scripts to manipulate the content.
+Here is an example of using the span tag to apply styles:
+<p>This is a paragraph of text with a <span style="color: red;">highlighted</span> word.</p>
+In this example, the span tag is used to apply a red color style to the word "highlighted".
+Another example of using the span tag to add semantics:
+<p>The company's <span class="company-name">ABC Inc.</span> is a leading provider of software solutions.</p>
+In this example, the span tag is used to add a class attribute to the company name, which can be used to apply styles or scripts specifically to company names.
+Note that the span tag should only be used when there is no other more semantic element available, such as em for emphasis or strong for strong importance.
+Q.16)How to insert a picture into a background image of a web page? 
+Ans.To insert a picture into a background image of a web page using HTML, you can use the following methods:
+Method 1: Using the style attribute
+You can use the style attribute to set the background image of an element, such as the body element or a div element.
+<body style="background-image: url('image.jpg'); background-size: cover; background-position: center;">
+  <!-- content here -->
+</body>
+Method 2: Using the background attribute
+You can use the background attribute to set the background image of an element, such as the body element or a div element.
+<body background="image.jpg">
+  <!-- content here -->
+</body>
+Method 3: Using an img element as a background image
+You can use an img element as a background image by positioning it absolutely and setting its z-index to a negative value.
+<img src="image.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+<!-- content here -->
+Method 4: Using a div element with a background image
+You can use a div element with a background image and position it absolutely to create a background image.
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('image.jpg'); background-size: cover; background-position: center; z-index: -1;"></div>
+<!-- content here -->
+Note that in all of these examples, you should replace the image.jpg with the actual URL of the image you want to use as the background.
+Also, keep in mind that using the style attribute or the background attribute can make your HTML code less readable and less maintainable. It's generally recommended to use CSS to set the background image, as it allows for more flexibility and easier maintenance.
+Q.17)How are active links different from normal links?
+Ans.In HTML, active links are different from normal links in terms of their appearance and behavior.
+Normal Links
+Normal links are links that have not been visited or clicked by the user. They are typically displayed in a default color, such as blue, and are underlined.
+Active Links
+Active links, on the other hand, are links that are currently being clicked or are active. They are typically displayed in a different color, such as red or purple, and may have a different font style or decoration.
+Here are the main differences between active links and normal links:
+Color: Active links are typically displayed in a different color than normal links.
+Font Style: Active links may have a different font style, such as bold or italic, than normal links.
+Decoration: Active links may have a different decoration, such as an underline or overline, than normal links.
+Behavior: Active links are currently being clicked or are active, whereas normal links are not.
+This will make active links appear in red, bold, and underlined.
+Here is an example of how to use the :active pseudo-class in HTML:
+<a href="#">Normal Link</a>
+<a href="#" style="color: red; font-weight: bold; text-decoration: underline;">Active Link</a>
+Note that the :active pseudo-class only applies to links that are currently being clicked or are active. Once the link is no longer active, it will revert to its normal appearance.
+It's worth noting that there are four link states in HTML:
+:link - normal links
+:visited - links that have been visited
+:hover - links that are being hovered over
+:active - links that are currently being clicked or are active
+Q.18)What are the different tags to separate sections of text? 
+Ans.In HTML, there are several tags that can be used to separate sections of text, depending on the purpose and structure of the content. Here are some of the most common tags used to separate sections of text:
+Headings:
+<h1> - Main heading
+<h2> - Subheading
+<h3> - Sub-subheading
+<h4> - Sub-sub-subheading
+<h5> - Sub-sub-sub-subheading
+<h6> - Sub-sub-sub-sub-subheading
+Example:
+html
+<h1>Main Heading</h1>
+<h2>Subheading</h2>
+<h3>Sub-subheading</h3>
+Paragraphs:
+<p> - Paragraph of text
+Example:
+html
+<p>This is a paragraph of text.</p>
+<p>This is another paragraph of text.</p>
+Line Breaks:
+<br> - Line break (no closing tag)
+Example:
+html
+This is a line of text.<br>
+This is another line of text.
+Horizontal Rules:
+<hr> - Horizontal rule (no closing tag)
+Example:
+html
+<p>This is a paragraph of text.</p>
+<hr>
+<p>This is another paragraph of text.</p>
+Divisions:
+<div> - Division or section of text
+Example:
+html
+<div>
+  <h2>Section Heading</h2>
+  <p>This is a paragraph of text.</p>
+</div>
+Sections:
+<section> - Section of related content
+Example:
+html
+<section>
+  <h2>Section Heading</h2>
+  <p>This is a paragraph of text.</p>
+</section>
+Articles:
+<article> - Independent piece of content
+Example:
+<article>
+  <h2>Article Heading</h2>
+  <p>This is a paragraph of text.</p>
+</article>
+Aside:
+<aside> - Content related to the main content
+Example:
+<aside>
+  <h2>Aside Heading</h2>
+  <p>This is a paragraph of text.</p>
+</aside>
+Footer:
+<footer> - Footer section of a document or section
+Example:
+<footer>
+  <p>&copy; 2023</p>
+</footer>
+These are just a few of the many tags available in HTML to separate sections of text. The choice of tag depends on the structure and purpose of the content.
+Q.19)What is SVG? 
+Ans.SVG stands for Scalable Vector Graphics. It is a file format used to create two-dimensional vector graphics, such as icons, logos, and graphics. SVG files are written in XML (Extensible Markup Language) and use a combination of text and mathematical equations to draw shapes and lines.
+Key Features of SVG:
+Scalability: SVG graphics can be scaled up or down without losing any quality, making them ideal for responsive web design.
+Vector-based: SVG graphics are made up of vectors, which are mathematical equations that draw shapes and lines. This allows for precise control over the graphics.
+XML-based: SVG files are written in XML, which makes them easy to edit and manipulate using text editors or programming languages.
+Interactive: SVG graphics can be interactive, allowing users to hover, click, and animate elements.
+Accessible: SVG graphics can be made accessible to screen readers and other assistive technologies, making them a great choice for accessible web design.
+Using SVG in HTML:
+To use SVG in HTML, you can embed an SVG file using the <img> tag, just like you would with a raster image:
+html
+<img src="image.svg" alt="SVG Image">
+Alternatively, you can inline the SVG code directly into your HTML document using the <svg> tag:
+html
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" fill="red" />
+</svg>
+This will render a red circle with a radius of 40 pixels, centered at (50, 50) within a 100x100 pixel box.
+Benefits of Using SVG:
+Resolution independence: SVG graphics remain sharp and clear at any resolution or screen size.
+Small file size: SVG files are often smaller than raster images, making them ideal for web use.
+Flexibility: SVG graphics can be easily edited and manipulated using text editors or programming languages.
+Accessibility: SVG graphics can be made accessible to screen readers and other assistive technologies.
+Common Use Cases for SVG:
+Icons: SVG is ideal for creating icons, logos, and other small graphics that need to be scalable and resolution-independent.
+Infographics: SVG can be used to create interactive and dynamic infographics that can be easily updated and edited.
+Animations: SVG can be used to create animations and interactive effects, such as hover effects and loading animations.
+Responsive web design: SVG is a great choice for responsive web design, as it allows for scalable and flexible graphics that adapt to different screen sizes and resolutions.
+Q.19)What is difference between HTML and XHTML?
+Ans.HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) are both markup languages used to create web pages. The main difference between the two is the way they are structured and the rules they follow.
+HTML:
+Loose syntax: HTML has a loose syntax, which means that it is more forgiving and allows for some errors and inconsistencies in the code.
+No XML rules: HTML does not follow the rules of XML (Extensible Markup Language), which means that it does not require a document type declaration (DTD) or a namespace.
+No self-closing tags: In HTML, tags do not need to be self-closing, which means that the / character is not required at the end of a tag.
+Less strict: HTML is less strict than XHTML, which means that it allows for more flexibility and creativity in coding.
+Example of HTML code:
+html
+<html>
+  <head>
+    <title>HTML Example</title>
+  </head>
+  <body>
+    <p>This is an HTML example.</p>
+  </body>
+</html>
+XHTML:
+Strict syntax: XHTML has a strict syntax, which means that it requires a more precise and consistent coding style.
+Follows XML rules: XHTML follows the rules of XML, which means that it requires a document type declaration (DTD) and a namespace.
+Self-closing tags: In XHTML, tags must be self-closing, which means that the / character is required at the end of a tag.
+More strict: XHTML is more strict than HTML, which means that it requires a more precise and consistent coding style.
+Example of XHTML code:
+xhtml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>XHTML Example</title>
+  </head>
+  <body>
+    <p>This is an XHTML example.</p>
+  </body>
+</html>
+Key differences:
+Syntax: XHTML has a stricter syntax than HTML.
+XML rules: XHTML follows XML rules, while HTML does not.
+Self-closing tags: XHTML requires self-closing tags, while HTML does not.
+Document type declaration: XHTML requires a document type declaration (DTD), while HTML does not.
+When to use each:
+Use HTML: When you need a more flexible and forgiving coding style, and you don't need to follow XML rules.
+Use XHTML: When you need a more precise and consistent coding style, and you need to follow XML rules.
+It's worth noting that XHTML is not as widely used as HTML, and most modern web development frameworks and tools use HTML5, which is the latest version of the HTML standard.
+Q.20)What are logical and physical tags in HTML?
+Ans.Logical and Physical Tags in HTML:
+In HTML, tags can be classified into two categories: logical tags and physical tags.
+Logical Tags:
+Logical tags are used to define the structure and meaning of the content, rather than its physical appearance. They provide information about the content's purpose, role, or function. Logical tags are also known as semantic tags.
+Examples of logical tags:
+<header>: defines the header section of a document or section
+<nav>: defines a navigation section
+<main>: defines the main content section
+<section>: defines a self-contained section of related content
+<article>: defines an independent piece of content, such as a blog post or news article
+<aside>: defines content that is related to the main content, but not essential to it
+Physical Tags:
+Physical tags, on the other hand, are used to control the physical appearance of the content, such as its layout, font, color, and other visual aspects. Physical tags are also known as presentational tags.
+Examples of physical tags:
+<b>: makes the text bold
+<i>: makes the text italic
+<u>: underlines the text
+<font>: specifies the font family, size, and color
+<center>: centers the text horizontally
+<big>: makes the text larger
+Key differences:
+Purpose: Logical tags define the structure and meaning of the content, while physical tags control its physical appearance.
+Semantic meaning: Logical tags provide semantic meaning to the content, while physical tags do not.
+Accessibility: Logical tags are more accessible to screen readers and other assistive technologies, as they provide a clear understanding of the content's structure and meaning.
+Maintainability: Logical tags make it easier to maintain and update the content, as they provide a clear separation of concerns between structure and presentation.
+Best practices:
+Use logical tags: Use logical tags to define the structure and meaning of your content, and avoid using physical tags for this purpose.
+Use CSS for presentation: Use CSS to control the physical appearance of your content, rather than relying on physical tags.
+Separate structure and presentation: Keep the structure and presentation of your content separate, using logical tags for structure and CSS for presentation.
+By following these best practices, you can create more accessible, maintainable, and scalable web pages that are easier to understand and navigate.
